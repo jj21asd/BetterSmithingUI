@@ -1,15 +1,15 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/jj21asd/BetterSmithingUI/issues"
 license = "MIT"
 
 [[mods]]
 modId = "better_smithing_ui"
 version = "${version}"
 displayName = "Better Smithing UI"
-authors = "jjblock21"
-description = ''''''
-#logoFile = ""
+authors = "jj21"
+description = '''Replaces the ugly vanilla smithing menu with an improved version'''
+logoFile = "icon.png"
 
 [[dependencies.better_smithing_ui]]
 modId = "neoforge"
