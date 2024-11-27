@@ -5,14 +5,14 @@
   "name": "Better Smithing UI",
   "description": "Replaces the ugly vanilla smithing menu with an improved version",
   "authors": [
-    "jjblock21"
+    "jj21"
   ],
   "contact": {
     "sources": "https://github.com/jj21asd/BetterSmithingUI",
     "issues": "https://github.com/jj21asd/BetterSmithingUI/issues"
   },
   "license": "MIT",
-  "icon": "assets/better_smithing_ui/icon.png",
+  "icon": "icon.png",
   "environment": "client",
   "entrypoints": {
     "main": [
@@ -26,7 +26,6 @@
     "fabricloader": ">=0.16.9",
     "minecraft": "~1.20.4",
     "java": ">=17",
-    "architectury": ">=11.1.17",
-    "fabric-api": "*"
+    "architectury": ">=11.1.17"
   }
 }

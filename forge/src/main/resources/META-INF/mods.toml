@@ -7,11 +7,9 @@ license = "MIT"
 modId = "better_smithing_ui"
 version = "${version}"
 displayName = "Better Smithing UI"
-authors = "jjblock21"
-description = '''
-Replaces the ugly vanilla smithing menu with an improved version
-'''
-logoFile = "assets/better_smithing_ui/icon.png"
+authors = "jj21"
+description = '''Replaces the ugly vanilla smithing menu with an improved version'''
+logoFile = "icon.png"
 
 [[dependencies.better_smithing_ui]]
 modId = "forge"
