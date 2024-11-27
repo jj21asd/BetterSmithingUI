@@ -15,3 +15,4 @@ bin/
 .project
 *.DS_Store
 workspace/
+.architectury-transformer/
