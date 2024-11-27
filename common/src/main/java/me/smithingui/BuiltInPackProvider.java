@@ -52,8 +52,11 @@ public class BuiltInPackProvider implements ResourcePackProvider {
     }
 
     static {
-        INSERT_POS = new ResourcePackPosition(false,
-                ResourcePackProfile.InsertionPosition.TOP, false);
+        INSERT_POS = new ResourcePackPosition(
+                false, // Always active
+                ResourcePackProfile.InsertionPosition.TOP,
+                false // Fixed position
+        );
     }
 
     private record BuiltInPackFactory(Path path) implements ResourcePackProfile.PackFactory {
@@ -64,7 +67,7 @@ public class BuiltInPackProvider implements ResourcePackProvider {
 
         @Override
         public ResourcePack openWithOverlays(ResourcePackInfo info, ResourcePackProfile.Metadata metadata) {
-            return open(info);
+            return open(info); // Idk what this does, might cause problems in the future
         }
     }
 }
