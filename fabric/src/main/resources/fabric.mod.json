@@ -7,6 +7,10 @@
   "authors": [
     "jj21"
   ],
+  "contact": {
+    "sources": "https://github.com/jj21asd/BetterSmithingUI",
+    "issues": "https://github.com/jj21asd/BetterSmithingUI/issues"
+  },
   "license": "MIT",
   "icon": "icon.png",
   "environment": "client",
