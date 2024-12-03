@@ -7,6 +7,10 @@
   "authors": [
     "jj21"
   ],
+  "contact": {
+    "sources": "https://github.com/jj21asd/BetterSmithingUI",
+    "issues": "https://github.com/jj21asd/BetterSmithingUI/issues"
+  },
   "license": "MIT",
   "icon": "icon.png",
   "environment": "client",
@@ -20,8 +24,8 @@
   ],
   "depends": {
     "fabricloader": ">=0.16.9",
-    "minecraft": "~1.21",
+    "minecraft": ">=1.21.2",
     "java": ">=21",
-    "architectury": ">=13.0.2"
+    "architectury": ">=14.0.3"
   }
 }

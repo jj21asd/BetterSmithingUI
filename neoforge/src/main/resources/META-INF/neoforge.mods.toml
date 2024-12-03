@@ -14,21 +14,21 @@ logoFile = "icon.png"
 [[dependencies.better_smithing_ui]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.0,)"
+versionRange = "[21.2.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.better_smithing_ui]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21,)"
+versionRange = "[1.21.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.better_smithing_ui]]
 modId = "architectury"
 type = "required"
-versionRange = "[13.0.2,)"
+versionRange = "[14.0.4,)"
 ordering = "AFTER"
 side = "BOTH"
 

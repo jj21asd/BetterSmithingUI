@@ -12,8 +12,8 @@ public final class SmithingUI {
     public static final String PACK_ROOT = "resourcepacks";
 
     public static void init() {
-        BuiltInPackProvider packProvider = new BuiltInPackProvider(PACK_ROOT);
-        BuiltInPackProvider.register(packProvider);
+        BuiltInResourcePackProvider packProvider = new BuiltInResourcePackProvider(PACK_ROOT);
+        BuiltInResourcePackProvider.register(packProvider);
 
         packProvider.addPack("dark_ui", Text.literal("Dark Smithing UI"));
         packProvider.addPack("transparent_ui", Text.literal("Transparent Smithing UI"));

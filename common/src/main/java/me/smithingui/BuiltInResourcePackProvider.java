@@ -13,18 +13,18 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-public class BuiltInPackProvider implements ResourcePackProvider {
+public class BuiltInResourcePackProvider implements ResourcePackProvider {
     private final String rootPath;
     private final List<ResourcePackProfile> profiles;
 
     private static final ResourcePackPosition INSERT_POS;
 
-    public BuiltInPackProvider(String rootPath) {
+    public BuiltInResourcePackProvider(String rootPath) {
         this.rootPath = rootPath;
         this.profiles = new ArrayList<>();
     }
 
-    public static void register(BuiltInPackProvider packProvider) {
+    public static void register(BuiltInResourcePackProvider packProvider) {
         ResourcePackManager manager = MinecraftClient.getInstance().getResourcePackManager();
         PackRepositoryHooks.addSource(manager, packProvider);
     }
@@ -40,7 +40,7 @@ public class BuiltInPackProvider implements ResourcePackProvider {
             Objects.requireNonNull(pack);
             profiles.add(pack);
         }, () -> {
-            SmithingUI.LOGGER.error("Failed to load included resourcepack: \"{}\"", path);
+            SmithingUI.LOGGER.error("Failed to load built-in resourcepack: \"{}\"", path);
         });
     }
 
@@ -52,8 +52,11 @@ public class BuiltInPackProvider implements ResourcePackProvider {
     }
 
     static {
-        INSERT_POS = new ResourcePackPosition(false,
-                ResourcePackProfile.InsertionPosition.TOP, false);
+        INSERT_POS = new ResourcePackPosition(
+                false, // Always active
+                ResourcePackProfile.InsertionPosition.TOP,
+                false // Fixed position
+        );
     }
 
     private record BuiltInPackFactory(Path path) implements ResourcePackProfile.PackFactory {
@@ -64,7 +67,7 @@ public class BuiltInPackProvider implements ResourcePackProvider {
 
         @Override
         public ResourcePack openWithOverlays(ResourcePackInfo info, ResourcePackProfile.Metadata metadata) {
-            return open(info);
+            return open(info); // Idk what this does, might cause problems in the future
         }
     }
 }
