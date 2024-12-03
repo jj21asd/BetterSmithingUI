@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[46,)"
 issueTrackerURL = "https://github.com/jj21asd/BetterSmithingUI/issues"
 license = "MIT"
 
@@ -14,20 +14,20 @@ logoFile = "icon.png"
 [[dependencies.better_smithing_ui]]
 modId = "forge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "[46,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.better_smithing_ui]]
 modId = "minecraft"
 mandatory = true
-versionRange = "1.20.1"
+versionRange = "[1.20,1.20.2)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.better_smithing_ui]]
 modId = "architectury"
 mandatory = true
-versionRange = "[9.2.14,)"
+versionRange = "[9.0.6,)"
 ordering = "AFTER"
 side = "BOTH"
