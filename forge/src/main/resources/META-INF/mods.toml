@@ -21,7 +21,7 @@ side = "BOTH"
 [[dependencies.better_smithing_ui]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,)"
+versionRange = "1.20.1"
 ordering = "NONE"
 side = "BOTH"
 
